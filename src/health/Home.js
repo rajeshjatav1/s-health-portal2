@@ -1,34 +1,46 @@
 import React from 'react'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div class="container">
-        <div>
+    <>
+    <div>
+      <Navbar/>
+      </div>    
+    <div style={{ backgroundColor: '#0c0c0ca6' }} class="container my-4 rounded-4 p-4 border">
+      <div className='text-light fw-bold fs-5 p-4'>
         <p> Welcome dear reader, we hope our content will make you healthy soon, do not forget to read daily health tips</p>
-        </div>
-        <div>
-        <ul id="list">
-            <li><a href="cold.html" target="__blank">Cold (सर्दी)</a></li>
-            <li><a href="cough.html" target="__blank">Cough (खाँसी)</a></li>
-            <li><a href="fever.html" target="__blank">Fever (बुखार)</a></li>
-            <li><a href="/" target="__blank">Allergies</a></li>
-            <li><a href="/" target="__blank">Headaches (सिर दर्द)</a></li>
-            <li><a href="/" target="__blank">Skin infection (त्वचा संक्रमण)</a></li>
-            <li><a href="/" target="__blank">Digestion (पाचन)</a></li>
-            <li><a href="/" target="__blank">Skin Problems (त्वचा संबंधी समस्याएं)</a></li>
-            <li><a href="/" target="__blank">Hair loss (बालों का झड़ना)</a></li>
-            <li><a href="/" target="__blank">Sleep Issue (नींद की समस्या)</a></li>
-            <li><a href="/" target="__blank">Malaria (मलेरिया)</a></li>
-            <li><a href="/" target="__blank">Jaundice (पीलिया)</a></li>
-            <li><a href="/" target="__blank">Typhoid (टाइफाइड)</a></li>
-            <li><a href="/" target="__blank">Tongue Ulcers (जीभ के छाले)</a></li>
-            <li><a href="/" target="__blank">Conjunctivitis (आँख आना)</a></li>
-            <li><a href="/" target="__blank">Concentration Issue (एकाग्रता की समस्या)</a></li>
-            <li><a href="/" target="__blank">Extra usage of social media (सोशल मीडिया का अधिक प्रयोग)</a></li>
-            <li><a href="/" target="__blank">Pimples (चहरे पर दाने)</a></li>
+      </div>
+      <div>
+        <ul className='text-light' id="list">
+          <li><Link className='text-decoration-none text-light' to="/health/cold">Cold (सर्दी)</Link></li>
+          <li><Link className='text-decoration-none text-light' to="/health/cough" >Cough (खाँसी)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/health/fever" >Fever (बुखार)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/health/allergies" >Allergies</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/health/headache" >Headaches (सिर दर्द)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Skin infection (त्वचा संक्रमण)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Digestion (पाचन)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Skin Problems (त्वचा संबंधी समस्याएं)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Hair loss (बालों का झड़ना)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Sleep Issue (नींद की समस्या)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Malaria (मलेरिया)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Jaundice (पीलिया)</Link></li>
+          <li><Link className='text-decoration-none text-light ' to="/" >Typhoid (टाइफाइड)</Link></li>
+          <li><Link className='text-decoration-none text-light' to="/" >Tongue Ulcers (जीभ के छाले)</Link></li>
+          <li><Link className='text-decoration-none text-light' to="/" >Conjunctivitis (आँख आना)</Link></li>
+          <li><Link className='text-decoration-none text-light' to="/" >Concentration Issue (एकाग्रता की समस्या)</Link></li>
+          <li><Link className='text-decoration-none text-light' to="/" >Extra usage of social media (सोशल मीडिया का अधिक प्रयोग)</Link></li>
+          <li><Link className='text-decoration-none text-light' to="/" >Pimples (चहरे पर दाने)</Link></li>
         </ul>
-        </div>
+      </div>
     </div>
+    <div>
+      <Footer/>
+    </div>
+    </>
+
   )
 }
 

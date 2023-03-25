@@ -10,7 +10,7 @@ function App() {
         <Navbar />
       </div>
       <div>
-        <div style={{backgroundColor:'#0c0c0c70'}} className="container p-5 my-4 rounded-5">
+        <div style={{backgroundColor:'#0c0c0ca6'}} className="container border p-5 my-4 rounded-5">
           <div className="text-light text-center mt-5">
             <h5 className='mt-5'>Welcome to Student's Portal <br />
               This portal is mainly developed for Students who face heath related common problems,
@@ -21,7 +21,7 @@ function App() {
             <div className='fs-4'>
               <h5 style={{backgroundColor:'#0c0c0c70'}} className='mt-5 p-3 rounded-4'>Select what you want to study about</h5>
             </div>
-            <button className='btn btn-primary my-2 w-25 p-2'><Link className='text-light text-decoration-none' to='/'> Health</Link></button><br />
+            <button className='btn btn-primary my-2 w-25 p-2'><Link className='text-light text-decoration-none' to='/health'> Health</Link></button><br />
             <button className='btn btn-primary my-2 w-25 p-2'><Link className='text-light text-decoration-none' to='/'> Placement Preparation</Link></button>
           </div>
         </div>

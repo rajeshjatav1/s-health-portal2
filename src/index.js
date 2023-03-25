@@ -11,11 +11,20 @@ import {
   from 'react-router-dom';
 import About from './components/About';
 import './static/about.css'
-
+import Cold from './health/Cold';
+import Cough from './health/Cough';
+import Fever from './health/Fever';
+import Allergies from './health/Allergies';
+import Headache from './health/Headache';
+import Prehome from './components/Prehome';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path:'/',
+    element:<Prehome/>
+  },
+  {
+    path: '/home',
     element: <App />
   },
   {
@@ -26,6 +35,26 @@ const router = createBrowserRouter([
     path:'/about',
     element:<About/>
 
+  },
+  {
+    path:'/health/cold',
+    element:<Cold/>
+  },
+  {
+    path:"/health/cough",
+    element:<Cough/>
+  },
+  {
+    path:'/health/fever',
+    element:<Fever/>
+  },
+  {
+    path:'/health/allergies',
+    element:<Allergies/>
+  },
+  {
+    path:'health/headache',
+    element:<Headache/>
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
