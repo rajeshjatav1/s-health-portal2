@@ -8,6 +8,10 @@ body,html
   height: auto;
   z-index: -1;
 }
+#placement{
+ background-color: white;
+  height: 820px;
+}
 #navbar{
   display: flex;
   justify-content: center;

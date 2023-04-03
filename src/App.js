@@ -2,8 +2,31 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { Link } from 'react-router-dom';
+import { useEffect,useState } from 'react';
+import axios from 'axios';
 
 function App() {
+  const [message,setMessage] = useState('');
+  useEffect(()=>{
+    if(localStorage.getItem('access_token')==null){
+      window.location.href='/'
+    }
+    else{
+      (async () =>{
+        try {
+          const {data} = await axios.get('http://localhost:3000/home',{
+            headers:{
+              'Content-Type': 'application/json'
+            }
+          });
+          setMessage(data.message);
+        }
+        catch(e){
+          console.log('not auth')
+        }
+      })()
+    };
+  },[]);
   return (
     <>
       <div>
@@ -22,7 +45,7 @@ function App() {
               <h5 style={{backgroundColor:'#0c0c0c70'}} className='mt-5 p-3 rounded-4'>Select what you want to study about</h5>
             </div>
             <button className='btn btn-primary my-2 w-25 p-2'><Link className='text-light text-decoration-none' to='/health'> Health</Link></button><br />
-            <button className='btn btn-primary my-2 w-25 p-2'><Link className='text-light text-decoration-none' to='/'> Placement Preparation</Link></button>
+            <button className='btn btn-primary my-2 w-25 p-2'><Link className='text-light text-decoration-none' to='/placement'> Placement Preparation</Link></button>
           </div>
         </div>
       </div>
