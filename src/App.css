@@ -55,3 +55,14 @@ body,html
   margin:0px auto;
   bottom: 0;
 }
+.courselist li:hover{
+  background-color: #007a8018;
+  color:rgb(0, 39, 146);
+  transition-property: all;
+  transition-duration: .6s;
+}
+.coursehead:hover{
+  background-color: #007a803b;
+  transition-property: all;
+  transition-duration: 1s;
+}
