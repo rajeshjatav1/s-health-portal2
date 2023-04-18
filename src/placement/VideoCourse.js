@@ -1,5 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 const VideoCourse = () => {
     return (
@@ -7,13 +9,16 @@ const VideoCourse = () => {
             <div>
                 <Navbar />
             </div>
-            <div className='row mt-5 margin-auto m-2'>
+            <div style={{ backgroundColor: '#dcebd7' }} className="fw-bold text-center mt-3 mx-3 rounded-4">
+                <h4 className='p-3'> Video Courses</h4>
+            </div>
+            <div className='row mt-3 margin-auto m-2'>
                 <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg p-3 m-1 rounded-4'>
                     <div className='card-img text-center'>
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/C.png" alt="" />
                     </div>
                     <p className='mt-3 text-center'>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972</p>
-                    <h2 style={{ cursor: 'pointer' }} className='mt-2 text-center p-2 rounded-pill coursehead' data-bs-toggle='modal' data-bs-target='#cmodal'>C Language Tutorials</h2>
+                    <h2 style={{ cursor: 'pointer', transitionProperty: 'all', transitionDuration: '0.9s' }} className='mt-2 text-center p-2 rounded-pill coursehead' data-bs-toggle='modal' data-bs-target='#cmodal'>C Language Tutorials</h2>
                     <div class="modal fade" id="cmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -58,7 +63,7 @@ const VideoCourse = () => {
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/C++.png" alt="" />
                     </div>
                     <p className='mt-2'>C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs</p>
-                    <h2 style={{ cursor: 'pointer' }} className='mt-2 text-center p-2 rounded-pill coursehead' data-bs-toggle='modal' data-bs-target='#c++modal'>C++ Tutorials</h2>
+                    <h2 style={{ cursor: 'pointer', transitionProperty: 'all', transitionDuration: '0.9s' }} className='mt-2 text-center p-2 rounded-pill coursehead' data-bs-toggle='modal' data-bs-target='#c++modal'>C++ Tutorials</h2>
                     <div class="modal fade" id="c++modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -103,7 +108,7 @@ const VideoCourse = () => {
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/csharp.png" alt="" />
                     </div>
                     <p className='mt-2'>C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework. C# is used to develop web apps, desktop apps, mobile apps, games.</p>
-                    <h2 style={{ cursor: "pointer" }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#csharpmodal'>C-Sharp Tutorials</h2>
+                    <h2 style={{ cursor: "pointer", transitionProperty: 'all', transitionDuration: '0.9s' }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#csharpmodal'>C-Sharp Tutorials</h2>
                     <div class="modal fade" id="csharpmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -151,7 +156,7 @@ const VideoCourse = () => {
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/python.png" alt="" />
                     </div>
                     <p className='mt-2'>Python is a very popular general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990</p>
-                    <h2 style={{ cursor: "pointer" }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#pythonmodal'>Python Tutorials</h2>
+                    <h2 style={{ cursor: "pointer", transitionProperty: 'all', transitionDuration: '0.9s' }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#pythonmodal'>Python Tutorials</h2>
                     <div class="modal fade" id="pythonmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -197,7 +202,7 @@ const VideoCourse = () => {
                         <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/Java.png" alt="" />
                     </div>
                     <p className='mt-2'>Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.</p>
-                    <h2 style={{ cursor: "pointer" }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#javamodal'>Java Tutorials</h2>
+                    <h2 style={{ cursor: "pointer", transitionProperty: 'all', transitionDuration: '0.9s' }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#javamodal'>Java Tutorials</h2>
                     <div class="modal fade" id="javamodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -238,8 +243,64 @@ const VideoCourse = () => {
                     </div>
                 </div>
                 <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className='col-lg col-lg p-3 m-1 rounded-4'>
+                    <div className='card-img text-center'>
+                        <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/html5.png" alt="" />
+                    </div>
+                    <p className='mt-2'>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.</p>
+                    <h2 style={{ cursor: "pointer", transitionProperty: 'all', transitionDuration: '0.9s' }} className='mt-2 text-center coursehead rounded-pill p-2' data-bs-toggle='modal' data-bs-target='#htmlmodal'>HTML Tutorials</h2>
+                    <div class="modal fade" id="htmlmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div style={{ backgroundColor: '#dcebd7' }} class="modal-body">
+                                    <div className='card-img text-center'>
+                                        <img style={{ height: '100px', width: 'auto' }} className='card-img' src="/html5.png" alt="" />
+                                    </div>
+                                    <h2 style={{ backgroundColor: '#007a803b' }} className='mt-3 text-center p-2 rounded-pill'>HTML Tutorials</h2>
+                                    <ul className='mt-4 courselist'>
+
+                                        <li className='p-2 rounded-pill'>
+                                            <a className='text-decoration-none ms-2' href="https://www.youtube.com/watch?v=BsDoLVMnmZs&t=225s&pp=ygUbaHRtbCB0dXRvcmlhbCBmb3IgYmVnaW5uZXJz" target='__blank'>HTML By Code With Harry<i class="bi bi-youtube ms-2 pt-4"></i></a>
+                                        </li>
+                                        <li className='p-2 rounded-pill'>
+                                            <a className='text-decoration-none ms-2' href="https://i.ytimg.com/vi/HcOc7P5BMi4/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDhPX6wxKBrgd2wX8UgbzrzKb5Jdw" target='__blank'>HTML By Apna College<i class="bi bi-youtube ms-2 pt-4"></i></a>
+                                        </li>
+                                        <li className='p-2 rounded-pill'>
+                                            <a className='text-decoration-none ms-2' href="https://www.youtube.com/watch?v=byTOONVJn-k&pp=ygUbaHRtbCB0dXRvcmlhbCBmb3IgYmVnaW5uZXJz" target='__blank'>HTML by Thapa Technical<i class="bi bi-youtube ms-2 pt-4"></i></a>
+                                        </li>
+                                        <li className='p-2 rounded-pill'>
+                                            <a className='text-decoration-none ms-2' href="https://www.youtube.com/watch?v=YR7q48s2QoU&pp=ygUbaHRtbCB0dXRvcmlhbCBmb3IgYmVnaW5uZXJz" target='__blank'>HTML By College Wallah<i class="bi bi-youtube ms-2 pt-4"></i></a>
+                                        </li>
+                                        <li className='p-2 rounded-pill'>
+                                            <a className='text-decoration-none ms-2' href="https://www.youtube.com/watch?v=x9bTBcron78&list=PLrjkTql3jnm_jANGCBtfgDilMZy0Ne_7o" target='__blank'>HTML By Education 4u</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+            </div>
+            <div className="container">
+                <h5 className='text-center text-success'>Go To <i class="bi bi-hand-index-thumb"></i></h5>
+                <div className='text-center container my-4 d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column flex-sm-row'>
+
+                    <Link className='text-decoration-none me-3 border p-2 rounded coursemenu m-1' to='/health'>Health page</Link>
+                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/'>Home page</Link>
+                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/hr-interview'>HR Interview</Link>
+                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/text-course'>Text Courses</Link>
+                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/practice'>Practice Sites</Link>
+                    <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/tech-interview'>Technical Interview</Link>
+                </div>
+            </div>
+            <div style={{position:'relative'}} className="footer">
+                <Footer/>
             </div>
         </div>
     )

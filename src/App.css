@@ -1,16 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Poppins:wght@100;200&display=swap');
 *{
   margin:0px;
   padding:0px;
 }
 body,html
 {
-  background: url('../public/bg5.jpg') no-repeat center center/cover;
+  overflow-x: hidden;
+ 
   height: auto;
-  z-index: -1;
-}
-#placement{
- background-color: white;
-  height: 820px;
+  overflow-x: hidden;
 }
 #navbar{
   display: flex;
@@ -29,9 +27,11 @@ body,html
   list-style: none;
 }
 #navbar ul a{
-  padding:8px 30px;
+  padding:8px 20px;
   color: white;
   text-decoration: none;
+  transition-property: all;
+  transition-duration: .7s;
   font-size: 17px;
   font-weight: bold;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -55,14 +55,65 @@ body,html
   margin:0px auto;
   bottom: 0;
 }
+.courselist li{
+  transition-property: all;
+  transition-duration: .5s;
+}
 .courselist li:hover{
   background-color: #007a8018;
   color:rgb(0, 39, 146);
   transition-property: all;
   transition-duration: .6s;
+  font-size: 15.5px;
+}
+.coursehead{
+  transition-property: all;
+  transition-duration: .5s;
 }
 .coursehead:hover{
   background-color: #007a803b;
   transition-property: all;
   transition-duration: 1s;
+  font-size: 31px;
+}
+.pagelink:hover{
+  background-color: #007a8018;
+  font-size: 18px;
+  color:rgb(0, 39, 146);
+  transition-property: all;
+  transition-duration: .6s;
+}
+.footer{
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+.practiceitem{
+  transition-property: all;
+  transition-duration: .7s;
+}
+.practiceitem:hover{
+  font-size: 17px;
+}
+.coursemenu{
+  transition-property: all;
+  transition-duration: .7s;
+  font-size: 17px;
+}
+.coursemenu:hover{
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.mobilehome{
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  background: rgb(136,224,106);
+background: linear-gradient(90deg, rgba(136,224,106,1) 0%, rgba(204,242,192,1) 51%, rgba(40,201,102,1) 100%);
+}
+
+@media screen and (max-width:500px) {
+  .footer{
+    position: relative;
+  }
 }

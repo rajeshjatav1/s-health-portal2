@@ -20,14 +20,18 @@ import Allergies from './health/Allergies';
 import Headache from './health/Headache';
 import Prehome from './components/Prehome';
 import VideoCourse from './placement/VideoCourse';
+import TextCourse from './placement/TextCourse';
+import ProgramPractice from './placement/ProgramPractice';
+import InterviewT from './placement/InterviewT';
+import InterviewH from './placement/InterviewH';
 
 const router = createBrowserRouter([
   {
-    path:'/',
+    path:'/home',
     element:<Prehome/>
   },
   {
-    path: '/home',
+    path: '/',
     element: <App />
   },
   {
@@ -66,7 +70,24 @@ const router = createBrowserRouter([
   {
     path:'/placement/video-courses',
     element:<VideoCourse/>
-  }
+  },
+  {
+    path:'/placement/text-course',
+    element:<TextCourse/>
+  },
+  {
+    path:'/placement/practice',
+    element:<ProgramPractice/>
+  },
+  {
+    path:'/placement/tech-interview',
+    element:<InterviewT/>
+  },
+  {
+    path:'/placement/hr-interview',
+    element:<InterviewH/>
+  },
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

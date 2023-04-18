@@ -8,8 +8,9 @@ const Cold = () => {
             <div>
                 <Navbar />
             </div>
-            <div style={{ backgroundColor: '#0c0c0ca6' }} className='p-5 my-5 text-light mx-5 rounded-4 border'>
-                <div>
+            <div  className='my-5 text-light rounded-4 container'>
+            <div style={{ backgroundColor: '#dcebd7', color: 'green', height: 'auto' }} className='p-3 py-4 rounded-4 shadow  my-5 rounded-4 container'>
+
                     <p>जुकाम हर बदलते मौसम के साथ आने वाली समस्या है, लेकिन हमारे देश में हर परेशानी के लिए लोग डॉक्टरों के पास नहीं जाते। हमारी ही किचन में कई ऐसे घरेलु नुस्खे (Home Remedies) छिपे होते हैं जिनसे जुकाम जैसी छोटी-मोटी बीमारियां फुर्र हो जाती हैं।</p>
                     <ul>
                         <li>शहद, नींबू और इलायची का मिश्रण - आधा चम्मच शहद में एक चुटकी इलायची पाउडर और कुछ बूंद नींबू के रस की बूंदे डालिए। इस सिरप का दिन में 2 बार सेवन करें। आपको खांसी-जुकाम से काफी राहत मिलेगी।</li>
@@ -23,7 +24,7 @@ const Cold = () => {
                     </ul>
                 </div>
             </div>
-            <div style={{bottom:'0'}} className='position-absolute w-100'>
+            <div className='footer w-100'>
                 <Footer/>
             </div>
         </div>
