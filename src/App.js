@@ -58,7 +58,8 @@ function App() {
           </div>
 
         </div>
-        <div className="d-lg-none d-block container m-0 p-3 w-100 mobilehome">
+        <div className='d-lg-none d-block mobilehome'>
+        <div className="m-0 p-3 w-100">
           <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className="container shadow border p-3 mt-3 rounded-5">
             <div className="text-center mt-2">
               <h5 style={{fontFamily:'Dongle, serif'}} className='mt-2 fs-3'>Welcome to S-Health Portal <br />
@@ -81,6 +82,7 @@ function App() {
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div className='footer' >
           <Footer />
