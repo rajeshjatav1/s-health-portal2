@@ -1,17 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
 const Cold = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    setTimeout(() => {
+        setIsLoading(false);
+    }, 3000);
     return (
         <div>
             <div>
                 <Navbar />
             </div>
-            <div  className='my-5 text-light rounded-4 container'>
-            <div style={{ backgroundColor: '#dcebd7', color: 'green', height: 'auto' }} className='p-3 py-4 rounded-4 shadow  my-5 rounded-4 container'>
+            <div className='my-3 text-light rounded-4 container'>
 
-                    <p>जुकाम हर बदलते मौसम के साथ आने वाली समस्या है, लेकिन हमारे देश में हर परेशानी के लिए लोग डॉक्टरों के पास नहीं जाते। हमारी ही किचन में कई ऐसे घरेलु नुस्खे (Home Remedies) छिपे होते हैं जिनसे जुकाम जैसी छोटी-मोटी बीमारियां फुर्र हो जाती हैं।</p>
+                <div style={{ backgroundColor: '#dcebd7', color: 'green', height: 'auto' }} className='p-3 py-4 rounded-4 shadow  my-5 rounded-4 container'>
+                    <div className="text-center">
+                        {isLoading ? (
+                            <>
+                                <div class="spinner-border" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <div className="">
+                                    Please wait...
+                                </div>
+                            </>
+                        ) : (
+                            <iframe className='rounded-3' width="100%" height="300px" src="https://www.youtube.com/embed/kXvOwXbdhPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        )}
+                    </div>
+
+                    <p className='mt-2'>जुकाम हर बदलते मौसम के साथ आने वाली समस्या है, लेकिन हमारे देश में हर परेशानी के लिए लोग डॉक्टरों के पास नहीं जाते। हमारी ही किचन में कई ऐसे घरेलु नुस्खे (Home Remedies) छिपे होते हैं जिनसे जुकाम जैसी छोटी-मोटी बीमारियां फुर्र हो जाती हैं।</p>
                     <ul>
                         <li>शहद, नींबू और इलायची का मिश्रण - आधा चम्मच शहद में एक चुटकी इलायची पाउडर और कुछ बूंद नींबू के रस की बूंदे डालिए। इस सिरप का दिन में 2 बार सेवन करें। आपको खांसी-जुकाम से काफी राहत मिलेगी।</li>
                         <li>गर्म पानी
@@ -24,9 +43,10 @@ const Cold = () => {
                     </ul>
                 </div>
             </div>
-            <div className='footer w-100'>
-                <Footer/>
+            <div style={{ position: 'relative', bottom: '0px' }} className='footer w-100'>
+                <Footer />
             </div>
+
         </div>
     )
 }

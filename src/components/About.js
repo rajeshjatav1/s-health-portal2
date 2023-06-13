@@ -5,13 +5,13 @@ import Navbar from './Navbar'
 const About = () => {
     return (
         
-            <div  id="health">
+            <div style={{height:'500px'}}>
                 <div>
                     <Navbar />
                 </div>
-                <div class="container1 d-flex align-items-center mt-5 p-1">
-                    <div style={{ backgroundColor: '#dcebd7',color: '#105c93',height:'auto' }} className='p-2 mx-3 rounded shadow border fw-bold'>
-                        <h5 className='p-4 id'>
+                <div class=" d-flex align-items-center mt-5 p-1">
+                    <div style={{ backgroundColor: '#dcebd7',color: '#105c93' }} className='p-2 mx-3 rounded shadow border fw-bold'>
+                        <h5 className='p-4'>
                             I developed this website for students who usually face common health related problems, when i was a
                             student i faced many health related issues, i found that many students whome was studying with me was
                             also usually face some similar type of problems, so i decided to develop a platform which can help all these type of

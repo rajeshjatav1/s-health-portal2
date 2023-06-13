@@ -22,11 +22,11 @@ const Home = () => {
                 <li><Link className='text-decoration-none  ' to="/health/fever" >Fever (बुखार)</Link></li>
                 <li><Link className='text-decoration-none  ' to="/health/allergies" >Allergies</Link></li>
                 <li><Link className='text-decoration-none  ' to="/health/headache" >Headaches (सिर दर्द)</Link></li>
-                <li><Link className='text-decoration-none  ' to="/" >Skin infection (त्वचा संक्रमण)</Link></li>
-                <li><Link className='text-decoration-none  ' to="/" >Digestion (पाचन)</Link></li>
-                <li><Link className='text-decoration-none  ' to="/" >Skin Problems (त्वचा संबंधी समस्याएं)</Link></li>
-                <li><Link className='text-decoration-none  ' to="/" >Hair loss (बालों का झड़ना)</Link></li>
-                <li><Link className='text-decoration-none  ' to="/" >Sleep Issue (नींद की समस्या)</Link></li>
+                <li><Link className='text-decoration-none  ' to="/health/skin-infection" >Skin infection (त्वचा संक्रमण)</Link></li>
+                <li><Link className='text-decoration-none  ' to="/health/digestion" >Digestion (पाचन)</Link></li>
+                <li><Link className='text-decoration-none  ' to="/health/skin-problems" >Skin Problems (त्वचा संबंधी समस्याएं)</Link></li>
+                <li><Link className='text-decoration-none  ' to="/health/hair-loss" >Hair loss (बालों का झड़ना)</Link></li>
+                <li><Link className='text-decoration-none  ' to="/health/sleep-issue" >Sleep Issue (नींद की समस्या)</Link></li>
                 <li><Link className='text-decoration-none  ' to="/" >Malaria (मलेरिया)</Link></li>
                 <li><Link className='text-decoration-none  ' to="/" >Jaundice (पीलिया)</Link></li>
                 <li><Link className='text-decoration-none  ' to="/" >Typhoid (टाइफाइड)</Link></li>
@@ -38,15 +38,16 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className='text-center my-2 d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column'>
+          <div className='text-center d-flex d-md-flex d-sm-flex flex-lg-row flex-md-row flex-column'>
             <Link className='text-decoration-none me-3 border p-2 rounded coursemenu m-1' to='/placement'>Go to placement page</Link>
             <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/'>Go to Home page</Link>
           </div>
         </div>
-        <div>
+        
+      </div>
+      <div className='position-relative pt-5'>
           <Footer />
         </div>
-      </div>
     </>
 
   )

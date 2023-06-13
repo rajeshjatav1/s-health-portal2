@@ -24,6 +24,11 @@ import TextCourse from './placement/TextCourse';
 import ProgramPractice from './placement/ProgramPractice';
 import InterviewT from './placement/InterviewT';
 import InterviewH from './placement/InterviewH';
+import SkinInfection from './health/SkinInfection';
+import Digestion from './health/Digestion';
+import SkinProblems from './health/SkinProblems';
+import HairLoss from './health/Hairloss';
+import SleepIssue from './health/SleepIssue';
 
 const router = createBrowserRouter([
   {
@@ -62,6 +67,26 @@ const router = createBrowserRouter([
   {
     path:'health/headache',
     element:<Headache/>
+  },
+  {
+    path:'health/skin-infection',
+    element:<SkinInfection/>
+  },
+  {
+    path:'health/skin-problems',
+    element:<SkinProblems/>
+  },
+  {
+    path:'health/hair-loss',
+    element:<HairLoss/>
+  },
+  {
+    path:'health/sleep-issue',
+    element:<SleepIssue/>
+  },
+  {
+    path:'health/digestion',
+    element:<Digestion/>
   },
   {
     path:'placement',

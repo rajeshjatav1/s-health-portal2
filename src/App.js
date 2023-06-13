@@ -29,14 +29,14 @@ function App() {
   // },[]);
   return (
     <>
-      <div id="health" className=''>
+      <div className='homepage'>
         <div>
           <Navbar />
         </div>
-        <div className='mx-2 d-flex align-items-center mt-5 d-lg-block d-none'>
-          <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className="container shadow border p-3 my-4 rounded-5">
+        <div className='mx-2 d-lg-flex d-none homepage-content'>
+          <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className="container shadow border p-3 my-4 rounded-3">
             <div className="text-center mt-2">
-              <h5 className='mt-2'>Welcome to S-Health Portal <br />
+              <h5 className='mt-2'>Welcome to S-Placement Portal <br />
                 This portal is mainly developed for Students who face heath related common problems,
                 We've also added some important materials for your placement preparation
                 if you are facing any health or placement related issue then you are on right place</h5>
@@ -62,7 +62,7 @@ function App() {
         <div className="m-0 p-3 w-100">
           <div style={{ backgroundColor: '#dcebd7', color: '#105c93' }} className="container shadow border p-3 mt-3 rounded-5">
             <div className="text-center mt-2">
-              <h5 style={{fontFamily:'Dongle, serif'}} className='mt-2 fs-3'>Welcome to S-Health Portal <br />
+              <h5 style={{fontFamily:'Dongle, serif'}} className='mt-2 fs-3'>Welcome to S-Placement Portal <br />
                 This portal is mainly developed for Students who face heath related common problems,
                 We've also added some important materials for your placement preparation
                 if you are facing any health or placement related issue then you are on right place</h5>
@@ -84,10 +84,11 @@ function App() {
           </div>
         </div>
         </div>
-        <div className='footer' >
+        
+      </div>
+      <div className='' >
           <Footer />
         </div>
-      </div>
     </>
   );
 }

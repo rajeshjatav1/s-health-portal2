@@ -95,7 +95,7 @@ const ProgramPractice = () => {
                <Link className='text-decoration-none border p-2 rounded coursemenu me-3 m-1' to='/placement/tech-interview'>Technical Interview</Link>
             </div>
          </div>
-         <div style={{position:'relative'}} className="footer">
+         <div className="">
             <Footer />
          </div>
       </div>

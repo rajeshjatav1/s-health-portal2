@@ -1,15 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 const Cough = () => {
+    const [loading, setLoading] = useState(true);
+    setTimeout(() => {
+        setLoading(false);
+    }, 3000);
     return (
         <div>
             <div>
                 <Navbar />
             </div>
-            <div style={{ backgroundColor: '#0c0c0ca6' }} className='p-5 my-5 text-light mx-5 rounded-4 border'>
-                <div id="content">
-                    <p>खांसी होना बहुत ही आम बात है। खांसी बच्चों से लेकर बुजुर्गों तक को हो सकती है। मौसम में जरा से भी बदलाव, या फिर अन्य कारणों से लोगों को बराबर खांसी हो जाती है। खांसी होने पर गले में खराश और दर्द भी होने लगता है, लेकिन क्या आप जानते हैं कि खांसी का इलाज घर पर ही असरदार घरेलू नुस्खों (Home Remedies) से कर सकते  हैं।</p>
+            <div className='my-5 text-light rounded-4 container'>
+                <div style={{ backgroundColor: '#dcebd7', color: 'green', height: 'auto' }} className='p-3 py-4 rounded-4 shadow  my-5 rounded-4 container'>
+                    <div className="text-center">
+                        {
+                            loading ? (
+                                <>
+                                    <div class="spinner-border" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    <div className="">
+                                        Please wait...
+                                    </div>
+                                </>
+                            ) : (
+
+                                <iframe width="100%" className='rounded-4' height="300px" src="https://www.youtube.com/embed/KBCtrjhnLF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                            )
+                        }
+                    </div>
+                    <p className='mt-3'>खांसी होना बहुत ही आम बात है। खांसी बच्चों से लेकर बुजुर्गों तक को हो सकती है। मौसम में जरा से भी बदलाव, या फिर अन्य कारणों से लोगों को बराबर खांसी हो जाती है। खांसी होने पर गले में खराश और दर्द भी होने लगता है, लेकिन क्या आप जानते हैं कि खांसी का इलाज घर पर ही असरदार घरेलू नुस्खों (Home Remedies) से कर सकते  हैं।</p>
                     <br />
                     <ul>
                         <p>खांसी मुख्यतः दो प्रकार की होती हैः-</p>
